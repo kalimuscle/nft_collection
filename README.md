@@ -1,13 +1,25 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates how create nft collection in Ethereum. Tes network: Goerli and localnetwork
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Backend
+
+1. npm install
+
+2. If you using local network
+    - npx hardhat node
+    - npx hardhat run scripts/deploy.js --network localhost
+
+ if using Goerli network
+    - npx hardhat run scripts/deploy.js --network goerli
+
+
+Frontend
+
+1. npm install
+
+2. Update filee /constants/index.js
+
+3. npm run dev
